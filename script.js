@@ -1,18 +1,26 @@
+//Global variables
+
 const menuButton = document.getElementById('menu')
 const menuCloseButton = document.getElementById('close-button')
 const menuBar = document.getElementById('menu-bar')
 const overlay = document.getElementById('overlay')
-//const skillDetail = document.getElementById('skills-details') //this needs to be get elements
 const accessibleInfo = document.getElementById('accessible-info')
 const firstCatchInfo = document.getElementById('first-catch-info')
 const accessible = document.getElementById('portfolio1')
 const firstCatch = document.getElementById('portfolio2')
 const forecast = document.getElementById('mixed-messages')
 const forecastButton = document.getElementById('message-button')
+const about = document.getElementById('about-link')
+const skills = document.getElementById('skills-link')
+const portfolio = document.getElementById('portfolio-link')
+const contact = document.getElementById('contact-link')
+const toTop = document.getElementById('to-top')
 
+
+//Event functions
 const open = () => {
-    menuBar.style.width = '400px';
-    menuBar.style.height = '600px';
+    menuBar.style.width = '350px';
+    menuBar.style.height = '500px';
     menuBar.style.border = '1px solid black';
     overlay.style.display = 'block';
 }
@@ -42,14 +50,22 @@ const hideFirstCatchInfo = () => {
     firstCatchInfo.style.display = 'none';
 }
 
+
+//Event handlers 
+
 //changes cursor to pointer over menu open and close buttons and skill details
 menuButton.addEventListener('mouseover', pointerChange)
 menuCloseButton.addEventListener('mouseover', pointerChange)
-//skillDetail.addEvenetListener('mouseover', pointerChange) //this needs to loop through an array of elements
+
 
 //opens and hides the menu bar
 menuButton.addEventListener('click', open)
 menuCloseButton.addEventListener('click', close)
+
+about.addEventListener('click', close)
+skills.addEventListener('click', close)
+portfolio.addEventListener('click', close)
+contact.addEventListener('click', close)
 
 //show porfolio info on mouse over
 accessible.addEventListener('mouseenter', displayAccessibleInfo)
@@ -66,8 +82,6 @@ const messageComponents = {
     direction: ['North', 'South', 'East', 'West', 'North East', 'South East', 'South West', 'North West'],
     windStrength: ['light', 'moderate', 'strong']
 };
-
-
 
 const randomForecast = () => {
     let randSwell = messageComponents.swellSize[Math.floor(Math.random() * (messageComponents.swellSize.length))]

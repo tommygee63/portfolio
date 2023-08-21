@@ -9,8 +9,11 @@
     </head>
 
     <body>
+        <!--Overlay for menu bar open-->
         <div class="overlay" id="overlay"></div>
-        <header>
+
+        <!--Page header-->
+        <header id="top">
             <div class="photo"></div>
             <h1>Tommy Gee</h1>
             <h2>Front-End Engineer</h2>
@@ -36,6 +39,9 @@
         </header>
 
         <main>
+
+            <!--About section-->
+
             <section class="about" id="about">
                 <h2>About</h2>
                 <div class="my-coding">
@@ -55,7 +61,11 @@
                     </p>
                 </div>
             </section>
+
             <hr>
+
+            <!--Skills section-->
+
             <section class="skills" id="skills">
                 <h2>Skills</h2>
                 <div class="skills-container">
@@ -97,13 +107,20 @@
                 </div>    
                 </div> 
             </section>
+
             <hr>
+            <!--Portfolio section-->
+
             <section class="portfolio" id="portfolio">
                 <h2>Portfolio</h2>
                 <div class="portfolio-container">
+
+                    <!--Accessible Adventure-->
                     <div class="portfolio1" id="portfolio1">
-                        <img src="./images/accessible-logo.png">
+                        <img src="./images/accessible-logo.png" alt="accessible adventure logo">
                         <h3>Accessible Adventure</h3>
+
+                        <!--Hidden section, reveal on mouse enter-->
                         <div class="accessible-info" id="accessible-info">
                             <p>
                                 Accessible Adventure is a home page for a local business offering outdoor sports people who are 
@@ -113,9 +130,15 @@
                             <p><em>Click anywhere in the box to close</em></p>
                         </div>
                     </div>
+
+                    <!--First Catch-->
+
                     <div class="portfolio2" id="portfolio2">
-                        <img src="./images/First-Catch-logo.jpg">
+                        <img src="./images/First-Catch-logo.jpg" alt="first catch logo">
                         <h3>First Catch</h3>
+
+                        <!--Hidden section, reveal on mouse enter-->
+
                         <div class="first-catch-info" id="first-catch-info">
                             <p>
                                 First Catch is the home page for a loacl business offering fishing lessons accredited by the Angling Trust.
@@ -124,22 +147,29 @@
                             <p><em>Click anywhere in the box to close</em></p>
                         </div>
                     </div>
+
+                    <!--Mixed Messages Project-->
+
                     <div class="portfolio3" id="portfolio3">
                         <h2>Mixed Messages</h2>
                         <p>Mixed Messages is a Codecademy project to build a random message generator using JavaScript.</p>
                         <p>Try it out below <i class="fa-solid fa-hand-point-down fa-2xl"></i></p>
                         <button class="message-button" id="message-button">Click for the surf forecast!</button>
+
+                        <!--Random message filled in-->
+
                         <p class="random-message" id="mixed-messages"></p>
                     </div>
                 </div>
             </section>
 
-            <button class="to-top" id="to-top">Back To Top <i class="fa-solid fa-hand-point-down fa-2xl"></i></button>
-            
+            <!--Footer-->
+
             <footer>
                 <h2>Produced by Tommy Gee</h2>
             </footer>
         </main>
+        
         <script src="./script.js"></script>
 
     </body>

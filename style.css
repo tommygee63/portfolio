@@ -1,9 +1,13 @@
+
+        /*Browser reset*/
+
 body {
     margin: 0;
     padding:0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
         /*overlay is to highlight the menu bar*/
+
 .overlay {
     position: fixed;
     height: 100%;
@@ -13,10 +17,14 @@ body {
     z-index: 1;
 }
 
+        /*Section breaks*/
+
 hr {
     width: 80%;
     margin: 0 auto;
 }
+
+         /*Header styling*/
 
 header {
     text-align: center;
@@ -26,6 +34,8 @@ header {
     margin-top: 0;
     padding-top: 0;
 }
+
+        /*picture of me*/
 .photo {
     height: 200px;
     width: 200px;
@@ -54,6 +64,7 @@ header {
     right: 20px;
     background-color: white;
 }
+        /*Inner style of menu button*/
 .menu div {
     width: 70%;
     height: 5%;
@@ -61,19 +72,28 @@ header {
     box-shadow: 1px 1px 1px;
     display: inline-block;
 }
+
         /*hidden menu bar styling*/
+
 .menu-bar {
     position: absolute;
     top: 0;
     right: 0;
     height: 0;
     width: 0;
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(230, 230, 230);
     z-index: 2;
     overflow: hidden;
     transition: 0.5s;
 }
+
+.menu-bar h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
         /*menu close button*/
+
 .menu-bar div {
     border: 1px solid black;
     box-shadow: 1px 1px 1px;
@@ -83,10 +103,31 @@ header {
     height: 18px;
     width: 18px;
 }
+
         /*menu bar links*/
+
 .menu-bar a {
-    display: block;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: black;
+    background-color: rgb(255, 173, 51);
+    border-radius: 5px;
+    width: 10rem;
+    margin: 1rem 0;
+    box-shadow: 5px 5px 1px;
+    box-sizing: border-box;
 }
+.menu-bar a:hover {
+    font-weight: bold;
+}
+.menu-bar a:active {
+    box-shadow: 1px 1px 1px;
+    transform: translatey(4px);
+}
+
+        /*Main section*/
 
 main {
     background-color: rgb(242, 242, 242);
@@ -102,6 +143,8 @@ h2 {
     font-size: 2rem;
     font-weight: bold;
 }
+
+        /*About section*/
 
 .about {
     text-align: center;
@@ -128,6 +171,8 @@ h2 {
     line-height: 1.4;
     padding: 0 1rem;
 }
+
+        /*Skills section*/
 
 .skills {
     text-align: center;
@@ -158,6 +203,8 @@ h2 {
     font-size: 1.5rem;
 }
 
+        /*Portfolio section*/
+
 .portfolio {
     text-align: center;
     padding-top: 2rem;
@@ -180,6 +227,7 @@ h2 {
     height: 12rem;
 }
 
+/*Accessible Adventure*/
 .portfolio1 {
     width: 45%;
     border: 1px solid rgb(255, 173, 51);
@@ -187,6 +235,7 @@ h2 {
     padding: 2rem 0.5rem;
 }
 
+/*First Catch*/
 .portfolio2 {
     width: 45%;
     border: 1px solid rgb(255, 173, 51);
@@ -215,6 +264,7 @@ h2 {
     display: none;
 }
 
+/*Mixed Messages*/
 .portfolio3 {
     border: 1px solid rgb(255, 173, 51);
     box-shadow: 5px 5px 5px rgb(255, 173, 51);
@@ -254,6 +304,8 @@ h2 {
     font-weight: bold;
 }
 
+        /*Footer*/
+        
 footer {
     text-align: center;
     border-top: 1px solid black;
