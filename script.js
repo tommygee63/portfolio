@@ -70,9 +70,9 @@ const messageComponents = {
 
 
 const randomForecast = () => {
-    let randSwell = messageComponents.swellSize[Math.floor(Math.random() * (messageComponents.swellSize.length -1 ))]
-    let randDirection = messageComponents.direction[Math.floor(Math.random() * (messageComponents.direction.length -1 ))]
-    let randWind = messageComponents.windStrength[Math.floor(Math.random() * (messageComponents.windStrength.length -1 ))]
+    let randSwell = messageComponents.swellSize[Math.floor(Math.random() * (messageComponents.swellSize.length))]
+    let randDirection = messageComponents.direction[Math.floor(Math.random() * (messageComponents.direction.length))]
+    let randWind = messageComponents.windStrength[Math.floor(Math.random() * (messageComponents.windStrength.length))]
     forecast.innerHTML = `There will be a ${randSwell} swell. <br> With a ${randWind} ${randDirection} wind!`
 }
 

@@ -215,6 +215,12 @@ h2 {
     display: none;
 }
 
+.portfolio3 {
+    border: 1px solid rgb(255, 173, 51);
+    box-shadow: 5px 5px 5px rgb(255, 173, 51);
+    padding: 2rem 0.5rem;
+}
+
 .portfolio3 i {
     padding-left: 1rem;
 }
@@ -222,6 +228,24 @@ h2 {
 .portfolio3 p {
     font-size: 1.5rem;
     line-height: 1.4;
+}
+
+.message-button {
+    font-size: 1.5rem;
+    background-color: rgb(255, 173, 51);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+}
+
+.message-button:hover {
+    cursor: pointer;
+}
+
+.message-button:active {
+    box-shadow: 1px 1px;
+    transform: translatex(4px);
+    transform: translatey(4px);
 }
 
 .random-message {
