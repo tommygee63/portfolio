@@ -22,7 +22,7 @@ header {
     text-align: center;
     border-bottom: 1px solid black;
     height: 13rem;
-    background-color: rgb(255, 173, 51);
+    background-image: linear-gradient(to top, rgba(255, 173, 51, 0), rgba(255, 173, 51, 1));
     margin-top: 0;
     padding-top: 0;
 }
@@ -116,17 +116,23 @@ h2 {
     width: 80%;
     margin: 0 auto;
     text-align: left;
+    border: 1px solid rgb(255, 173, 51);
+    box-shadow: 5px 5px 5px rgb(255, 173, 51);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .my-coding p {
     font-size: 1.5rem;
     padding: 1rem 0;
     line-height: 1.4;
+    padding: 0 1rem;
 }
 
 .skills {
     text-align: center;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .skills-container {
@@ -160,24 +166,35 @@ h2 {
 
 .portfolio-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 2rem;
-    width: 90%;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 5rem;
 }
 
-.portfolio-container .portfolio-box {
-    display: flex;
-    justify-content: space-evenly;
+.portfolio-container p {
+    padding-bottom: 1.5rem;
 }
 
 .portfolio-container img {
-    width: 50%;
-    height: auto;
+    width: auto;
+    height: 12rem;
 }
 
-.portfolio-box a {
+.portfolio1 {
+    width: 45%;
+    border: 1px solid rgb(255, 173, 51);
+    box-shadow: 5px 5px 5px rgb(255, 173, 51);
+    padding: 2rem 0.5rem;
+}
+
+.portfolio2 {
+    width: 45%;
+    border: 1px solid rgb(255, 173, 51);
+    box-shadow: 5px 5px 5px rgb(255, 173, 51);
+    padding: 2rem 0.5rem;
+}
+
+.portfolio-container a {
     font-size: 1.5rem;
     text-decoration: none;
     color: black;
@@ -185,12 +202,27 @@ h2 {
     border: 1px solid black;
     border-radius: 5px;
     background-color: rgb(255, 173, 51);
-    /*display: none;*/
+ 
 }
-.portfolio-box a:hover {
+.portfolio-container a:hover {
     font-weight: bold;
 }
-.portfolio-info {
-    width: 30%;
-    box-sizing: border-box;
+
+.accessible-info {
+    display: none;
 }
+.first-catch-info {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid black;
+    background-image: linear-gradient(to bottom, rgba(255, 173, 51, 0), rgba(255, 173, 51, 1));
+}
+
+footer h2 {
+    margin: 0;
+    padding: 3rem 0;
+}
+
