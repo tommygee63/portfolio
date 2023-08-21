@@ -7,6 +7,8 @@ const accessibleInfo = document.getElementById('accessible-info')
 const firstCatchInfo = document.getElementById('first-catch-info')
 const accessible = document.getElementById('portfolio1')
 const firstCatch = document.getElementById('portfolio2')
+const forecast = document.getElementById('mixed-messages')
+const forecastButton = document.getElementById('message-button')
 
 const open = () => {
     menuBar.style.width = '400px';
@@ -65,23 +67,14 @@ const messageComponents = {
     windStrength: ['light', 'moderate', 'strong']
 };
 
-const randomNum = num => {
-    return Math.floor(Math.random() * (num - 1))
-};
 
-for (let cond in messageComponents) {
-    let condIndex = randomNum(messageComponents[cond].length)
-    switch (cond) {
-        case 'swellSize':
-            console.log(`The swell is ${messageComponents[cond][condIndex]}`);
-            break;
-        case 'direction':
-            console.log(`The wind is from the ${messageComponents[cond][condIndex]}`);
-            break;
-        case 'windStrength':
-            console.log(`There is a ${messageComponents[cond][condIndex]} wind`);
-            break;
-        default:
-            console.log(`The conditions will be crap!`);
-    };
-};
+
+const randomForecast = () => {
+    let randSwell = messageComponents.swellSize[Math.floor(Math.random() * (messageComponents.swellSize.length -1 ))]
+    let randDirection = messageComponents.direction[Math.floor(Math.random() * (messageComponents.direction.length -1 ))]
+    let randWind = messageComponents.windStrength[Math.floor(Math.random() * (messageComponents.windStrength.length -1 ))]
+    forecast.innerHTML = `There will be a ${randSwell} swell. <br> With a ${randWind} ${randDirection} wind!`
+}
+
+forecastButton.addEventListener('click', randomForecast)
+

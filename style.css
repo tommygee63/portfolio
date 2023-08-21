@@ -215,6 +215,21 @@ h2 {
     display: none;
 }
 
+.portfolio3 i {
+    padding-left: 1rem;
+}
+
+.portfolio3 p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.random-message {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
 footer {
     text-align: center;
     border-top: 1px solid black;
