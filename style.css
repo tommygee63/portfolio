@@ -186,6 +186,8 @@ h2 {
 
 .skills-container {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
     justify-content: center;
     column-gap: 1.5rem;
     padding-bottom: 2rem;
@@ -325,3 +327,34 @@ footer h2 {
     padding: 3rem 0;
 }
 
+        /*Media queries*/
+
+@media only screen and (max-width: 800px) {
+    .portfolio1 {
+        width: 80%;
+    }
+    .portfolio2 {
+        width: 80%;
+    }
+    .my-coding {
+        width: 90%;
+    }
+    .my-coding p {
+        padding: 0 0.3rem;
+    }
+    h1 {
+        padding-top: 5rem;
+    }
+    header {
+        height: 14rem;
+    }
+    .about {
+        padding-top: 150px;
+    }
+    .photo {
+        height: 100px;
+        width: 100px;
+        top: 15rem;
+        left: 35%;
+    }
+}

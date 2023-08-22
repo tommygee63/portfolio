@@ -44,6 +44,12 @@ header {
     color: black;
 }
 
+        /*main styling*/
+
+/*main {
+    background-color: rgb(242, 242, 242);
+}*/
+
         /*Headings styles*/
 
 h1 {
@@ -61,24 +67,30 @@ h2 {
 
         /*Contact styling*/
 
+.phone-mobile {
+    display: none;
+}
+
 .contact p {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    background-color: rgb(255, 173, 51);
+    padding: 0.5rem;
 }
 
 .contact {
-    margin: 2rem 0;
+    padding: 1rem;
 }
 
 .contact i {
-    padding: 2rem;
+    padding: 1.5rem;
     font-size: 4rem;
 } 
 
 .contact a {
     text-decoration: none;
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: rgb(255, 173, 51);
     padding: 0.5rem;
 }
@@ -88,4 +100,63 @@ h2 {
     box-shadow: 5px 5px 5px rgb(255, 173, 51);
     width: 40%;
     margin: 0 auto;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+        /*Media Queries*/
+
+@media only screen and (max-width: 1500px) and (min-width: 1100px) {
+    .contact-info {
+        width: 60%;
+    }
+    .contact {
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .phone {
+        display: none;
+    }
+    .phone-mobile {
+        display: block;
+    }
+    .contact-info {
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        padding-top: 5rem;
+    }
+    .contact {
+        padding-left: 5%;
+    }
+    .contact p {
+        font-size: 1rem;
+    }
+    .contact a {
+        font-size: 1rem;
+    }
+    .contact i {
+        font-size: 1.5rem;
+        padding: 0.3rem;
+    }
+    .contact-info ul {
+        text-align: center;
+    }
+    header {
+        height: 17rem;
+    }
+    h1 {
+        padding-top: 5rem;
+    }
+    .photo {
+        height: 100px;
+        width: 100px;
+        top: 18rem;
+        left: 35%;
+    }
 }
