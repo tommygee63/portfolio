@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding:0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Libre Baskerville", serif;
 }
 
          /*Header styling*/
@@ -15,6 +15,7 @@ header {
     background-image: linear-gradient(to top, rgba(255, 173, 51, 0), rgba(255, 173, 51, 1));
     margin-top: 0;
     padding-top: 0;
+    margin-bottom: 2rem;
 }
 
         /*picture of me*/
@@ -31,6 +32,18 @@ header {
     background-size: cover;
 }
 
+        /*Home button*/
+
+.home {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.home i {
+    color: black;
+}
+
         /*Headings styles*/
 
 h1 {
@@ -43,4 +56,36 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: bold;
+}
+
+
+        /*Contact styling*/
+
+.contact p {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.contact {
+    margin: 2rem 0;
+}
+
+.contact i {
+    padding: 2rem;
+    font-size: 4rem;
+} 
+
+.contact a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    background-color: rgb(255, 173, 51);
+    padding: 0.5rem;
+}
+
+.contact-info {
+    border: 1px solid rgb(255, 173, 51);
+    box-shadow: 5px 5px 5px rgb(255, 173, 51);
+    width: 40%;
+    margin: 0 auto;
 }

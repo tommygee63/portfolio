@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content=" width=device-width initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
         <title>Tommy Gee</title>
         <link rel="stylesheet" href="./style.css">
         <script src="https://kit.fontawesome.com/77999cc2a6.js" crossorigin="anonymous"></script>
@@ -10,25 +11,35 @@
 
     <body>
         <!--Overlay for menu bar open-->
+
         <div class="overlay" id="overlay"></div>
 
         <!--Page header-->
+
         <header id="top">
             <div class="photo"></div>
             <h1>Tommy Gee</h1>
             <h2>Front-End Engineer</h2>
+
             <!--button for menu-->
+
             <div class="menu" id="menu">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
+
             <!--hidden menu bar-->
+
             <nav>
                 <div class="menu-bar" id="menu-bar">
+
             <!--menu bar close button-->
+
                     <div class="close-button" id="close-button">X</div> 
+
             <!--menu bar links-->
+
                     <h2>Navigation</h2>
                     <a href="#about" id="about-link">About</a><br>
                     <a href="#skills" id="skills-link">Skills</a><br>
@@ -69,42 +80,49 @@
             <section class="skills" id="skills">
                 <h2>Skills</h2>
                 <div class="skills-container">
+
                 <div class="skills-details" id="skills-details">
                     <details>
                         <summary><i class="fa-brands fa-github fa-2xl"></i></summary>
                         <p>Github</p>
                     </details>
                 </div>
+
                 <div class="skills-details" id="skills-details">
                     <details>
                         <summary><i class="fa-brands fa-square-js fa-2xl"></i></summary>
-                        <p>JavaScript</p>
+                        <p>Java Script</p>
                     </details>
                 </div>
+                
                 <div class="skills-details" id="skills-details">
                     <details>
                         <summary><i class="fa-brands fa-css3-alt fa-2xl"></i></summary>
                         <p>CSS</p>
                     </details>
                 </div>
+
                 <div class="skills-details" id="skills-details">
                     <details>
                         <summary><i class="fa-brands fa-html5 fa-2xl"></i></summary>
                         <p>HTML</p>
                     </details>
                 </div>
+
                 <div class="skills-details" id="skills-details">
                     <details>
                         <summary><i class="fa-brands fa-git fa-2xl"></i></summary>
                         <p>Git</p>
                     </details>
                 </div>
+
                 <div class="skills-details" id="skills-details">
                     <details>
                         <summary><i class="fa-brands fa-python fa-2xl"></i></summary>
                         <p>Python 3</p>
                     </details>
-                </div>    
+                </div> 
+
                 </div> 
             </section>
 
@@ -116,18 +134,20 @@
                 <div class="portfolio-container">
 
                     <!--Accessible Adventure-->
+                    
                     <div class="portfolio1" id="portfolio1">
                         <img src="./images/accessible-logo.png" alt="accessible adventure logo">
                         <h3>Accessible Adventure</h3>
 
                         <!--Hidden section, reveal on mouse enter-->
+
                         <div class="accessible-info" id="accessible-info">
                             <p>
                                 Accessible Adventure is a home page for a local business offering outdoor sports people who are 
                                 considered neuro-divergant.
                             </p>
                             <a href="https://tommygee63.github.io/accessible-adventure/" target="_blank">View the live site</a>
-                            <p><em>Click anywhere in the box to close</em></p>
+                            <p class="close-info"><em>Click anywhere in the box to close</em></p>
                         </div>
                     </div>
 
@@ -144,7 +164,7 @@
                                 First Catch is the home page for a loacl business offering fishing lessons accredited by the Angling Trust.
                             </p>
                             <a href="https://tommygee63.github.io/first-catch/" target="_blank">View the live site</a>
-                            <p><em>Click anywhere in the box to close</em></p>
+                            <p class="close-info"><em>Click anywhere in the box to close</em></p>
                         </div>
                     </div>
 
