@@ -356,6 +356,13 @@ footer h2 {
     .portfolio2 {
         width: 80%;
     }
+    .portfolio3 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .portfolio3 p {
+        font-size: 1rem;
+    }
     .my-coding {
         width: 90%;
     }
