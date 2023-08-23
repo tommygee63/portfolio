@@ -147,9 +147,11 @@ h2 {
     .contact i {
         font-size: 1.5rem;
         padding: 0.3rem;
+        margin-right: 0;
     }
     .contact-info ul {
         text-align: center;
+        padding-top: 1rem;
     }
     header {
         height: 17rem;
