@@ -38,22 +38,34 @@ const pointerChange = (event) => {
 
 const displayAccessibleInfo = () => {
     accessibleInfo.style.display = 'block';
+    accessible.removeEventListener('click', displayAccessibleInfo);
+    accessible.addEventListener('click', hideAccessibleInfo);
+    document.getElementById('click-for-more-accessible').style.display = 'none';
 }
 const hideAccessibleInfo = () => {
     accessibleInfo.style.display = 'none';
+    accessible.removeEventListener('click', hideAccessibleInfo);
+    accessible.addEventListener('click', displayAccessibleInfo);
+    document.getElementById('click-for-more-accessible').style.display = 'block';
 }
 
 const displayFirstCatchInfo = () => {
     firstCatchInfo.style.display = 'block';
+    firstCatch.removeEventListener('click', displayFirstCatchInfo);
+    firstCatch.addEventListener('click', hideFirstCatchInfo);
+    document.getElementById('click-for-more-first').style.display = 'none';
 }
 const hideFirstCatchInfo = () => {
     firstCatchInfo.style.display = 'none';
+    firstCatch.removeEventListener('click', hideFirstCatchInfo);
+    firstCatch.addEventListener('click', displayFirstCatchInfo);
+    document.getElementById('click-for-more-first').style.display = 'block';
 }
 
 
 //Event handlers 
 
-//changes cursor to pointer over menu open and close buttons and skill details
+//changes cursor to pointer over menu open and close buttons
 menuButton.addEventListener('mouseover', pointerChange)
 menuCloseButton.addEventListener('mouseover', pointerChange)
 
@@ -67,13 +79,13 @@ skills.addEventListener('click', close)
 portfolio.addEventListener('click', close)
 contact.addEventListener('click', close)
 
-//show porfolio info on mouse over
-accessible.addEventListener('mouseenter', displayAccessibleInfo)
-firstCatch.addEventListener('mouseenter', displayFirstCatchInfo)
+//show and hide porfolio info on click
+accessible.addEventListener('click', displayAccessibleInfo)
+firstCatch.addEventListener('click', displayFirstCatchInfo)
 
 //hide portfolio info on click
-accessible.addEventListener('click', hideAccessibleInfo)
-firstCatch.addEventListener('click', hideFirstCatchInfo)
+//accessible.addEventListener('click', hideAccessibleInfo)
+//firstCatch.addEventListener('click', hideFirstCatchInfo)
 
 
 //mixed messages logic
