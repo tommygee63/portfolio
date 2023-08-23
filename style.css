@@ -243,10 +243,6 @@ h2 {
     height: 12rem;
 }
 
-.mobile-link {
-    display: none;
-}
-
 /*Accessible Adventure*/
 .portfolio1 {
     width: 45%;
@@ -383,8 +379,5 @@ footer h2 {
         width: 100px;
         top: 15rem;
         left: 35%;
-    }
-    .mobile-link {
-        display: block;
     }
 }
