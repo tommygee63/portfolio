@@ -163,18 +163,28 @@ h2 {
     width: 80%;
     margin: 0 auto;
     text-align: left;
-    border: 1px solid rgb(255, 173, 51);
-    box-shadow: 5px 5px 5px rgb(255, 173, 51);
+    /*border: 1px solid rgb(255, 173, 51);*/
+    /*box-shadow: 5px 5px 5px rgb(255, 173, 51);*/
     padding-bottom: 2rem;
     margin-bottom: 2rem;
 }
 
 .my-coding p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 1rem 0;
     line-height: 1.4;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
+    border-left: 5px solid rgb(255, 173, 51);
 }
+
+/*.p1, .p3 {
+    border-left: 5px solid rgb(255, 173, 51);
+}
+.p2 {
+    border-right: 5px solid rgb(255, 173, 51);
+    padding-top: 2rem ;
+    padding-bottom: 2rem;
+}*/
 
         /*Skills section*/
 
@@ -240,17 +250,21 @@ h2 {
 /*Accessible Adventure*/
 .portfolio1 {
     width: 45%;
-    border: 1px solid rgb(255, 173, 51);
-    box-shadow: 5px 5px 5px rgb(255, 173, 51);
+    /*border: 1px solid rgb(255, 173, 51);
+    box-shadow: 5px 5px 5px rgb(255, 173, 51);*/
     padding: 2rem 0.5rem;
+    background-color: rgba(255, 173, 51, 0.2);
+    border-radius: 10px;
 }
 
 /*First Catch*/
 .portfolio2 {
     width: 45%;
-    border: 1px solid rgb(255, 173, 51);
-    box-shadow: 5px 5px 5px rgb(255, 173, 51);
+    /*border: 0.5px solid rgb(255, 173, 51);
+    box-shadow: 5px 5px 5px rgb(255, 173, 51);*/
     padding: 2rem 0.5rem;
+    background-color: rgba(255, 173, 51, 0.2);
+    border-radius: 10px;
 }
 
 .portfolio-container a {
@@ -280,9 +294,11 @@ h2 {
 
 /*Mixed Messages*/
 .portfolio3 {
-    border: 1px solid rgb(255, 173, 51);
-    box-shadow: 5px 5px 5px rgb(255, 173, 51);
+    /*border: 1px solid rgb(255, 173, 51);
+    box-shadow: 5px 5px 5px rgb(255, 173, 51);*/
     padding: 2rem 0.5rem;
+    background-color: rgba(255, 173, 51, 0.2);
+    border-radius: 10px;
 }
 
 .portfolio3 i {

@@ -76,6 +76,7 @@ h2 {
     font-size: 1.5rem;
     background-color: rgb(255, 173, 51);
     padding: 0.5rem;
+    border-radius: 7px;
 }
 
 .contact {
@@ -85,6 +86,8 @@ h2 {
 .contact i {
     padding: 1.5rem;
     font-size: 4rem;
+    width: 2rem;
+    margin-right: 2.5rem;
 } 
 
 .contact a {
@@ -93,11 +96,12 @@ h2 {
     font-size: 1.5rem;
     background-color: rgb(255, 173, 51);
     padding: 0.5rem;
+    border-radius: 7px;
 }
 
 .contact-info {
-    border: 1px solid rgb(255, 173, 51);
-    box-shadow: 5px 5px 5px rgb(255, 173, 51);
+    /*border: 1px solid rgb(255, 173, 51);
+    box-shadow: 5px 5px 5px rgb(255, 173, 51);*/
     width: 40%;
     margin: 0 auto;
 }
